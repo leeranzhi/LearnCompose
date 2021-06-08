@@ -48,9 +48,17 @@ fun MyApp(content: @Composable () -> Unit) {
 
 @Composable
 fun Greeting2(name: String) {
+    //MutableState，是 Compose 中的可观察类型。
+    // 值如有任何更改，系统会安排重组读取此值的所有可组合函数。
+
+    //1.remember remember 是一个可以赋予另一种可组合函数记忆能力的函数,
+    // remember 会将对象存储在组合中，当名为 remember 的可组合项从组合中移除后，它会忘记这些对象。
+    //2.rememberSaveable 在配置更改或中断（如来电）期间保持该状态
     var isSelected by remember {
         mutableStateOf(false)
     }
+
+
     val backgroundColor by animateColorAsState(if (isSelected) Color.Red else Color.Transparent)
     Text(
         text = "Hello $name!",

@@ -13,40 +13,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63a30d7a-35d3-430a-8691-755c5213b7b8" name="Default Changelist" comment="增加文字和图片居中属性.">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/example/mycompose/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/example/mycompose/MainActivity2.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/example/mycompose/ui/theme/Color.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/example/mycompose/ui/theme/Shape.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/example/mycompose/ui/theme/Theme.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/example/mycompose/ui/theme/Type.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/drawable/header.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/values-night/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../settings.gradle.kts" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/app/libs/hello.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/app/src/main/java/com/example/layoutscodelab/LibLoad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/app/src/main/java/com/example/layoutscodelab/MultithreadedLearning/testsetests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/app/src/main/java/com/example/layoutscodelab/ets.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-processor/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-processor/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-processor/src/main/java/com/example/lib_processor/BindingProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-reflection/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-reflection/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-reflection/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-reflection/src/androidTest/java/com/example/lib_reflection/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-reflection/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-reflection/src/main/java/com/example/lib_reflection/apt/BindView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-reflection/src/main/java/com/example/lib_reflection/apt/Binding.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-reflection/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-reflection/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-reflection/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-reflection/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-reflection/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-reflection/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-reflection/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-reflection/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-reflection/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-reflection/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-reflection/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-reflection/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-reflection/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-reflection/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-reflection/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-reflection/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-reflection/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-reflection/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LayoutsCodelab/lib-reflection/src/test/java/com/example/lib_reflection/ExampleUnitTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LayoutsCodelab/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../LayoutsCodelab/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LayoutsCodelab/app/src/main/java/com/example/layoutscodelab/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../LayoutsCodelab/app/src/main/java/com/example/layoutscodelab/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LayoutsCodelab/app/src/main/java/com/example/layoutscodelab/MultithreadedLearning/Race.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LayoutsCodelab/app/src/main/java/com/example/layoutscodelab/MultithreadedLearning/Race.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LayoutsCodelab/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../LayoutsCodelab/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LayoutsCodelab/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../LayoutsCodelab/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +114,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="memory.settings.postsync.last.time.stamp" value="1622431654408" />
+    <property name="memory.settings.postsync.last.time.stamp" value="1622537755457" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />

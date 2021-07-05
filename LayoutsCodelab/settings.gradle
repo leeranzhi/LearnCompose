@@ -8,3 +8,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "LayoutsCodelab"
 include ':app'
+include ':lib-reflection'
+include ':lib-processor'

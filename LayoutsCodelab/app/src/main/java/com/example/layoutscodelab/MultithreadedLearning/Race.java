@@ -5,7 +5,7 @@ public class Race implements Runnable {
     public void run() {
         for (int i = 0; i <= 100; i++) {
 
-            if(Thread.currentThread().getName().equals("兔子")&&i%10==0){
+            if (Thread.currentThread().getName().equals("兔子") && i % 10 == 0) {
                 try {
                     Thread.sleep(10);
                 } catch (InterruptedException e) {

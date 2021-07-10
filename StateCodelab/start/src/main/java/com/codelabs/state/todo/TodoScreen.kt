@@ -16,6 +16,7 @@
 
 package com.codelabs.state.todo
 
+import android.graphics.Color
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -25,9 +26,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.material.Button
-import androidx.compose.material.Icon
-import androidx.compose.material.Text
+import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
@@ -48,7 +47,7 @@ import kotlin.random.Random
 fun TodoScreen(
     items: List<TodoItem>,
     onAddItem: (TodoItem) -> Unit,
-    onRemoveItem: (TodoItem) -> Unit
+    onRemoveItem: (TodoItem) -> Unit,
 ) {
     Column {
         LazyColumn(
@@ -92,9 +91,11 @@ fun TodoRow(todo: TodoItem, onItemClicked: (TodoItem) -> Unit, modifier: Modifie
         horizontalArrangement = Arrangement.SpaceBetween
     ) {
         Text(todo.task)
+        val iconAlpha = remember(todo.id) { randomTint() }
         Icon(
             imageVector = todo.icon.imageVector,
-            contentDescription = stringResource(id = todo.icon.contentDescription)
+            contentDescription = stringResource(id = todo.icon.contentDescription),
+            tint = LocalContentColor.current.copy(iconAlpha)
         )
     }
 }

@@ -29,8 +29,6 @@ import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
-import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
@@ -114,35 +112,29 @@ private fun randomTint(): Float {
 }
 
 @Composable
-fun TodoInputTextField(modifier: Modifier) {
-    val (text, setText) = remember { mutableStateOf("") }
-    TodoInputText(text, setText, modifier)
-    //or
-//    var state by remember {
-//        mutableStateOf("")
-//    }
-//    TodoInputText(state, onTextChange = {
-//        state = it
-//    }, modifier)
-}
-
-@Composable
 fun TodoItemInput(onItemComplete: (TodoItem) -> Unit) {
+    val (text, setText) = remember { mutableStateOf("") }
     Column {
         Row(
             Modifier
                 .padding(horizontal = 16.dp)
                 .padding(top = 16.dp)
         ) {
-            TodoInputTextField(
-                Modifier
+            TodoInputText(
+                text = text,
+                onTextChange = setText,
+                modifier = Modifier
                     .weight(1f)
                     .padding(end = 8.dp)
             )
             TodoEditButton(
-                onClick = { /*TODO*/ },
+                onClick = {
+                    onItemComplete(TodoItem(text))
+                    setText("")
+                },
                 text = "Add",
-                modifier = Modifier.align(Alignment.CenterVertically)
+                modifier = Modifier.align(Alignment.CenterVertically),
+                enabled = text.isNotBlank()
             )
         }
     }

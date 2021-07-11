@@ -16,16 +16,25 @@
 
 package com.codelabs.state.todo
 
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateListOf
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 
 class TodoViewModel : ViewModel() {
+    //private state
+    private var currentEditPosition by mutableStateOf(-1)
 
     //state:todoItems
     var todoItems = mutableStateListOf<TodoItem>()
         private set
+
+    // state,todoItems和 currentEditPosition的任一更改
+    // Composable将会再次调用getter获取新的值
+    // Composable将观察 State<T> 的任何读取，即使发生在常规的kotlin函数中，也会被监听到
+    val currentEditItem: TodoItem?
+        get() = todoItems.getOrNull(currentEditPosition)
 
     fun addItem(item: TodoItem) {
         todoItems.add(item)
@@ -33,7 +42,26 @@ class TodoViewModel : ViewModel() {
 
     fun removeItem(item: TodoItem) {
         todoItems.remove(item)
+        onEditDone()
     }
+
+    fun onEditItemSelected(item: TodoItem) {
+        currentEditPosition = todoItems.indexOf(item)
+    }
+
+    fun onEditDone() {
+        currentEditPosition = -1
+    }
+
+    fun onEditItemChange(item: TodoItem) {
+        val currentItem = requireNotNull(currentEditItem)
+        require(currentItem.id == item.id) {
+            "You can only change an item with the same id as currentEditItem"
+        }
+
+        todoItems[currentEditPosition] = item
+    }
+
 
 //        private var _todoItems = MutableLiveData(listOf<TodoItem>())
 //    val todoItems: LiveData<List<TodoItem>> = _todoItems

@@ -16,7 +16,6 @@
 
 package com.codelabs.state.todo
 
-import android.graphics.Color
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -28,7 +27,11 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.runtime.getValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
@@ -50,6 +53,9 @@ fun TodoScreen(
     onRemoveItem: (TodoItem) -> Unit,
 ) {
     Column {
+        TodoItemInputBackground(elevate = true, modifier = Modifier.fillMaxWidth()) {
+            TodoItemInput(onItemComplete = onAddItem)
+        }
         LazyColumn(
             modifier = Modifier.weight(1f),
             contentPadding = PaddingValues(top = 8.dp)
@@ -95,17 +101,56 @@ fun TodoRow(
         horizontalArrangement = Arrangement.SpaceBetween
     ) {
         Text(todo.task)
-            Icon(
-                imageVector = todo.icon.imageVector,
-                contentDescription = stringResource(id = todo.icon.contentDescription),
-                tint = LocalContentColor.current.copy(alpha = iconAlpha)
-            )
+        Icon(
+            imageVector = todo.icon.imageVector,
+            contentDescription = stringResource(id = todo.icon.contentDescription),
+            tint = LocalContentColor.current.copy(alpha = iconAlpha)
+        )
     }
 }
 
 private fun randomTint(): Float {
     return Random.nextFloat().coerceIn(0.3f, 0.9f)
 }
+
+@Composable
+fun TodoInputTextField(modifier: Modifier) {
+    val (text, setText) = remember { mutableStateOf("") }
+    TodoInputText(text, setText, modifier)
+    //or
+//    var state by remember {
+//        mutableStateOf("")
+//    }
+//    TodoInputText(state, onTextChange = {
+//        state = it
+//    }, modifier)
+}
+
+@Composable
+fun TodoItemInput(onItemComplete: (TodoItem) -> Unit) {
+    Column {
+        Row(
+            Modifier
+                .padding(horizontal = 16.dp)
+                .padding(top = 16.dp)
+        ) {
+            TodoInputTextField(
+                Modifier
+                    .weight(1f)
+                    .padding(end = 8.dp)
+            )
+            TodoEditButton(
+                onClick = { /*TODO*/ },
+                text = "Add",
+                modifier = Modifier.align(Alignment.CenterVertically)
+            )
+        }
+    }
+}
+
+@Preview
+@Composable
+fun PreviewTodoItemInput() = TodoItemInput(onItemComplete = {})
 
 @Preview
 @Composable

@@ -15,7 +15,7 @@
 
 [rewrite_local]
 
-# > NOMO CAM 解锁订阅
+# > NOMO CAM 解锁订阅 Test
 ^https?:\/\/nomo\.dafork\.com\/api\/v3\/register\/phone_signin$ url script-response-body https://raw.githubusercontent.com/leeranzhi/LearnCompose/main/NoMoCrack.js
 
 [mitm] 
